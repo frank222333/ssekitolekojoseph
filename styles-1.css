@@ -1,0 +1,364 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: large;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('pics/pexels-castorlystock-4058104.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: red;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+	}
+	.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid red;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	font-size: small;
+}
+span{
+	background:red;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+.services {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	margin: 0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    flex: 1 1 30%;
+    max-width: 30%;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.service p {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	font-size: large;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us {
+    background-color: black;
+    padding: 40px;
+	color: #ecf0f1;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+	font-size: 2.3rem;
+	color: red;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-left, .image-right {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-left .image, .image-right .image {
+    flex: 1;
+    text-align: center;
+}
+
+.image-left .image img, .image-right .image img {
+    width: 700px;
+    height: 800px;
+}
+
+.image-left .text, .image-right .text {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.image-right {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .image-left, .image-right {
+        flex-direction: column;
+    }
+
+    .image-left .text, .image-right .text {
+        padding: 20px 0;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us {
+    background-image: url('pics/pexels-castorlystock-4058231.jpg'); /* Update with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Add transparency to background */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form-container .form-group input,
+.contact-form-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form-container button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background-color: #ff4500;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+
+
+
+

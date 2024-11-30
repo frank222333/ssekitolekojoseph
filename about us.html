@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITYLIFE MEDICALS</title>
+    <link rel="stylesheet" href="about us.css">
+</head>
+<body>
+    <header>
+        <div class="">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="./pics/images IIC.png"
+                alt="jwojwo_logo"
+                class="img-fluid"
+                width="100px"
+                height="100px"
+                
+              />
+            </a>
+          </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="heads.html">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+        <DIV></DIV>
+    </header>
+    
+    <section class="hero">
+        <h1 class="bounce-in">CITYLIFE MEDICALS</h1>
+        <h2 class="bounce-in">Your Health, Our Priority</h2>
+    </section>
+    
+   
+
+    <section class="testimonials">
+        <h2 class="bounce-in">Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"The care I received at CITYLIFE MEDICALS was outstanding. Highly recommend!"</p>
+                <span>- Serwanga Wycliff</span>
+            </div>
+            <div class="testimonial">
+                <p>"Professional staff and excellent services. Thank you!"</p>
+                <span>- Okune Sammie</span>
+            </div>
+            <div class="testimonial">
+                <p>"I felt well taken care of during my visit. Great experience."</p>
+                <span>- Kiwalabye Simon</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="more-content">
+        <h2 class="bounce-in">contact us</h2>
+        <p>Discover more about our state-of-the-art facilities, advanced medical technologies, and patient-centered care approach. We are here to ensure your well-being.</p>
+        
+    </section>
+    
+<div class="container">
+  <img src="pics/pexels" alt="Image">
+  <div class="form-container">
+      <form action="#" method="post">
+          <input type="text" name="firstname" placeholder="First Name" required>
+          <input type="text" name="lastname" placeholder="Last Name" required>
+          <input type="text" name="country" placeholder="Country" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="contact" placeholder="Contact" required>
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+</div>
+    <footer>
+        <div>
+            <h3 class="fw-bold"  style="color: red">CITYLIFE MEDICALS</h3>
+            <ul class="text-start small_text">
+              <li style="font-size: 20px" class="text-white">Located at Lubaga </li>
+              <li style="font-size: 20px" class="text-white">We're here to revolutionize your health.</li>
+              <li style="font-size: 20px" class="text-white">Working Hours: 24/7</li>
+            </ul>
+        </div>
+       
+          <div class="contact_footer col-4 text-center d-flex flex-column gap-1 justify-content-around">
+            <h3 class="fw-bold"  style="color: red">CONTACT US</h3>
+            <p style="font-size: 20px" class="small_text text-white">
+              <span>TEL: +256 750293512</span>&nbsp;
+            </p>
+            <p style="font-size: 20px" class="small_text text-white">
+              <span>EMAIL:</span>&nbsp;<span>info@citylife.com</span>
+            </p>
+
+            </div>
+            <div id="information">
+                <!-- Additional information will be displayed here -->
+                <h3 class="fw-bold"  style="color: red">FAQs</h3>
+                <ul class="text-start small_text" style="font-size: 18px">
+                  <li class="text-white" onclick="showInformation('private')">Is Citylife Medicals a private company?</li>
+                  <li class="text-white" onclick="showInformation('location')">Where is Citylife Medicals located?</li>
+                  <li class="text-white" onclick="showInformation('cost')">Are the services provided by Citylife Medicals free or paid?</li>
+                </ul>
+              </div>
+    </footer>
+
+    <script>
+        // JavaScript for bounce-in effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.bounce-in');
+            elements.forEach(element => {
+                element.classList.add('animated');
+            });
+        });
+    </script>
+</body>
+</html>

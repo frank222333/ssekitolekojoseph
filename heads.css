@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:dimgray;
+    color: white;
+    padding: 2rem 0;
+    /* text-align: center; */
+    font-size: 4.5rem;
+    box-shadow: 0 2px 4px orange;
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+section {
+    margin: 40px 0;
+}
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+.heads img, .casual-workers img {
+    width: 100%;
+    border-radius: 100%;
+}
+.heads .flex, .casual-workers .grid {
+    display: flex;
+    gap: 20px;
+    border-radius: 100%;
+}
+.heads .flex {
+    justify-content: space-between;
+}
+.heads .item, .casual-workers .item {
+    text-align: center;
+}
+.casual-workers .grid {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.casual-workers .item {
+    flex: 1 1 calc(25% - 20px);
+}
+.faqs {
+    background: url('pics/pexels-karolina-grabowska-4021770.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+}
+.faq-item {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+.form-section {
+    background: url('pics/pexels-n-voitkevich-5863404.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+}
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form-container form .form-item {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
